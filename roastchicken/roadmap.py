@@ -1,12 +1,13 @@
 #!/usr/bin/env python2
 
-import argparse
 
 def main():
     """ Let's come up with a few things you would like to do with 
     roastchicken. """
 
+    """ Start by creating a new recipe."""
     recipe = Recipe()
+    recipe = Recipe(name="Poulet Rôti")
 
     """ Every recipe has ingredients. """
     recipe.add_ingredients( ingredient )
@@ -33,35 +34,13 @@ def main():
     on the number of portions you would like to make."""
     recipe.portions = 4
 
+    """ Maybe you're in a hurry. It would be nice to order recipes by
+    an approximate preparation time. """
+    recipe.time
 
-def get_options():
-    parser = argparse.ArgumentParser()
-    #parser.add_argument('filenames', type=str, nargs='+',
-    #               help='photometric data to load.')
-    #parser.add_argument('-v','--verbose',\
-    #               action='store_true',\
-    #               help='Increases verbosity.')
-    #parser.add_argument('-o','--outputdir', type=str, default='images',\
-    #               help='output directory for images.')
+    """ Maybe this recipe needs special kitchen equipment."""
+    recipe.equipment
 
-    #parser.add_argument('-t','--test',\
-    #               action='store_true',\
-    #               help='Use test sequence [2,2,2,1,2].')
-    #parser.add_argument('-f','--full',\
-    #               action='store_true',\
-    #               help='print full arrays.')
-    #parser.add_argument('-o','--initial', type=int, default=10,\
-    #               help='length of initial set')
-    #parser.add_argument('-m','--max_turns', type=int, default=100000,\
-    #               help='maximum number of turns')
-    #parser.add_argument('t_init', type=str, nargs='+',
-    #               help='length of initial set')
-    #parser.add_argument('-o','--outputdir', type=str, default='images',\
-    #               help='output directory for images.')
-
-    args = parser.parse_args()
-    return args
 
 if __name__ == "__main__":
-    args = get_options()
     main()
