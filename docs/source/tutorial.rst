@@ -16,3 +16,10 @@ example code::
     for i in li:
         print i
 
+Testing LateX
+"""""""""""""
+.. math::
+    (a + b)^2 = a^2 + 2ab + b^2 
+
+    x - \frac{x^{3}}{6} + \frac{x^{5}}{120} + \mathcal{O}\left(x^{6}\right)
+
