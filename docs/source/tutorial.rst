@@ -12,9 +12,7 @@ example code::
     recipes = rs.get_recipes_all()
     print(recipes)
 
-Or with python synax highlighting .. code-block:: python
-    #main.py 
-    import roastchicken as rs
+    li = range(10)
+    for i in li:
+        print i
 
-    recipes = rs.get_recipes_all()
-    print(recipes)
