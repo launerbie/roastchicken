@@ -1,5 +1,4 @@
-#!/usr/bin/env python2
-
+#!/usr/bin/env python
 
 def main():
     """ Let's come up with a few things you would like to do with 
