@@ -7,14 +7,15 @@ A short tutorial on using roastchicken.
 Example code block::
 
     #main.py 
-    import roastchicken as rs
 
-    recipes = rs.get_recipes_all()
-    print(recipes)
+    from classes import Recipe, Ingredient
+    recipe = Recipe(name='Lasagna')
+    tomatoes = Ingredient('tomatoes')
+    c = Ingredient('grated cheese')
+    recipe.add_ingredients([tomatoes,c])
+    recipe.ingredients
+    [tomatoes, grated cheese]
 
-    li = range(10)
-    for i in li:
-        print i
 
 Testing LateX
 """""""""""""
