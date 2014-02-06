@@ -29,3 +29,9 @@ Example math:
 
     \int_{0}^{2 \pi}\int_{0}^{\pi}\int_{0}^{R} r^{2} \sin{\left (\theta \right )}\, dr\, d\theta\, d\phi
 
+Testing Warning Block
+"""""""""""""""""""""
+.. warning::
+   some warning
+   Warning!
+
