@@ -40,12 +40,6 @@ Lists and Quote-like block
 
 * and here the parent list continues
 
-Hyperlinks
-""""""""""
-This is a paragraph that contains `a link`_.
-
-.. _a link: http://example.com/
-
 #################
 This is a heading
 #################
@@ -69,6 +63,13 @@ subsubsections
 """""""""""""""""
 paragraphs
 """""""""""""""""
+
+Hyperlinks
+""""""""""
+This is a paragraph that contains `a link`_.
+
+.. _a link: http://example.com/
+
 
 Footnotes
 """""""""
