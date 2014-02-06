@@ -1,3 +1,4 @@
+.. highlight:: python
 
 Tutorial
 --------
@@ -50,27 +51,23 @@ This is a heading
 #################
 
 *****************
-This is a heading
+Chapters
 *****************
 
 =================
-This is a heading
+Sections
 =================
 
 -----------------
-This is a heading
+Subsections
 -----------------
 
 ^^^^^^^^^^^^^^^^^
-This is a heading
-^^^^^^^^^^^^^^^^^
-
-^^^^^^^^^^^^^^^^^
-This is a heading
+subsubsections
 ^^^^^^^^^^^^^^^^^
 
 """""""""""""""""
-This is a heading
+paragraphs
 """""""""""""""""
 
 Footnotes
@@ -92,7 +89,7 @@ Lorem ipsum [Ref]_ dolor sit amet.
 Comments
 """"""""
 ..
-     This whole indented block
+   This whole indented block
    is a comment.
 
    Still in the comment.
@@ -101,18 +98,17 @@ Testing Code blocks
 """""""""""""""""""
 
 .. code-block:: python
-      :emphasize-lines: 3,5
+   :emphasize-lines: 3,5
 
    def some_function():
        interesting = False
-       print 'This line is highlighted.'
-       print 'This one is not...'
-       print '...but this one is.'
+       print('This line is highlighted.')
+       print('This one is not...')
+       print('...but this one is.')
 
 Example code block::
 
     #main.py 
-
     from classes import Recipe, Ingredient
     recipe = Recipe(name='Lasagna')
     tomatoes = Ingredient('tomatoes')
@@ -123,10 +119,6 @@ Example code block::
 
 .. literalinclude:: example.py
 
-.. code-block:: python
-      :filename: this.py
-
-   print 'Explicit is better than implicit.'
 
 
 Testing LateX
@@ -143,7 +135,7 @@ Example math:
 
 
 Testing sphinx directives 
-"""""""""""""""""""""
+"""""""""""""""""""""""""
 .. warning::
    some warning
    Warning!
@@ -164,7 +156,7 @@ Testing sphinx directives
 .. centered:: LICENSE AGREEMENT
 
 .. hlist::
-      :columns: 3
+   :columns: 3
 
    * A list of
    * short items
