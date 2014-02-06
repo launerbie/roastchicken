@@ -20,8 +20,9 @@ text
 :title-reference:`text`
 
 
+--------------------------
 Lists and Quote-like block
-""""""""""""""""""""""""""
+--------------------------
 * This is a bulleted list.
 * It has two items, the second
   item uses two lines.
@@ -40,39 +41,53 @@ Lists and Quote-like block
 
 * and here the parent list continues
 
-#################
-This is a heading
-#################
 
-*****************
+--------
+Headings
+--------
+
 Chapters
 *****************
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Nulla viverra condimentum dictum. Suspendisse aliquam urna 
+in dui porta, at convallis nunc auctor. 
 
-=================
 Sections
 =================
+Aliquam molestie 
+augue non semper condimentum. Aenean dictum erat ac odio 
+tempor, non faucibus mauris ultricies. Integer lacinia sem 
+vitae metus sodales bibendum.
 
------------------
 Subsections
 -----------------
+Fusce lobortis sodales justo et laoreet. Morbi dignissim 
+tortor ac nisl vulputate interdum. Nam sit amet urna laoreet, 
+consequat libero vitae, sollicitudin odio. 
 
+Subsubsections
 ^^^^^^^^^^^^^^^^^
-subsubsections
-^^^^^^^^^^^^^^^^^
+Pellentesque quis consequat leo. Vivamus et velit quis neque 
+rhoncus egestas. Nulla tempus blandit dignissim.
 
+Paragraphs
 """""""""""""""""
-paragraphs
-"""""""""""""""""
+Nullam urna est, sollicitudin fermentum sodales non, porttitor 
+sit amet tellus. Duis volutpat volutpat placerat. Phasellus 
+euismod eu dolor vel congue. Maecenas vestibulum purus orci, 
+ut tempus elit posuere eget. 
 
+----------
 Hyperlinks
-""""""""""
+----------
 This is a paragraph that contains `a link`_.
 
 .. _a link: http://example.com/
 
 
+---------
 Footnotes
-"""""""""
+---------
 Lorem ipsum [#f1]_ dolor sit amet ... [#f2]_
 
 .. rubric:: Footnotes
@@ -80,25 +95,30 @@ Lorem ipsum [#f1]_ dolor sit amet ... [#f2]_
 .. [#f1] Text of the first footnote.
 .. [#f2] Text of the second footnote.
 
-
+---------
 Citations
-"""""""""
+---------
 Lorem ipsum [Ref]_ dolor sit amet.
 
 .. [Ref] Book or article reference, URL or whatever.
 
+--------
 Comments
-""""""""
+--------
 ..
    This whole indented block
    is a comment.
 
    Still in the comment.
 
-Testing Code blocks
-"""""""""""""""""""
+Of course you can't see the commented stuff here, but look at the
+source to see how comment blocks are made.
 
+-------------------
+Testing Code blocks
+-------------------
 .. code-block:: python
+
    :linenos:
 
    >>> test(10)
@@ -132,8 +152,9 @@ Example code block::
 
 
 
+-------------
 Testing LateX
-"""""""""""""
+-------------
 
 Example math:
 
@@ -145,8 +166,9 @@ Example math:
     \int_{0}^{2 \pi}\int_{0}^{\pi}\int_{0}^{R} r^{2} \sin{\left (\theta \right )}\, dr\, d\theta\, d\phi
 
 
+-------------------------
 Testing sphinx directives 
-"""""""""""""""""""""""""
+-------------------------
 .. warning::
    some warning
    Warning!
