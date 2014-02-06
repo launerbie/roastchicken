@@ -1,12 +1,12 @@
-.. highlight:: python
-
+========
 Tutorial
---------
+========
 
 Trying out some Sphinx directives:
 
+-------------
 Inline markup
-"""""""""""""
+-------------
 text
 *text*
 **text**
