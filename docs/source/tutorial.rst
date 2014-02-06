@@ -1,11 +1,11 @@
-========
-Tutorial
-========
+===============
+Sphinx Examples
+===============
 
-Trying out some Sphinx directives:
+Just trying out some Sphinx directives:
 
 -------------
-Inline markup
+Inline Markup
 -------------
 text
 *text*
@@ -21,7 +21,7 @@ text
 
 
 --------------------------
-Lists and Quote-like block
+Lists and Quote-like Block
 --------------------------
 * This is a bulleted list.
 * It has two items, the second
@@ -114,11 +114,11 @@ Comments
 Of course you can't see the commented stuff here, but look at the
 source to see how comment blocks are made.
 
--------------------
-Testing Code blocks
--------------------
+-----------
+Code Blocks
+-----------
+A line-numbered code-block:
 .. code-block:: python
-
    :linenos:
 
    >>> test(10)
@@ -128,6 +128,7 @@ Testing Code blocks
    >>> 
 
 
+A code-block with highlighted lines:
 .. code-block:: python
    :emphasize-lines: 3,5
 
@@ -148,15 +149,47 @@ Example code block::
     recipe.ingredients
     [tomatoes, grated cheese]
 
+A literal include of a file:
 .. literalinclude:: example.py
 
 
+Syntax highlighting C:
+.. code-block:: c
+    #include <stdio.h>
+    #include <stdlib.h>
+    
+    int main( int argc, char** argv)
+        {
+        printf("Hello World! \n");
+        return 0;
+        }
 
--------------
-Testing LateX
--------------
+Syntax highlighting java:
+.. code-block:: java
+    import java.util.Scanner;
+    
+    class ifstatement{
+        public static void main(String args[]){
+            int test = 6;
+    
+            if (test == 9){
+                System.out.println("yes");
+            }
+            else{
+                System.out.println("This is else");
+            }
+        }
+    }
 
-Example math:
+
+
+
+
+----------
+LateX/Math
+----------
+
+Example math code-block using LaTeX grammar:
 
 .. math::
     (a + b)^2 = a^2 + 2ab + b^2 
@@ -166,9 +199,9 @@ Example math:
     \int_{0}^{2 \pi}\int_{0}^{\pi}\int_{0}^{R} r^{2} \sin{\left (\theta \right )}\, dr\, d\theta\, d\phi
 
 
--------------------------
-Testing sphinx directives 
--------------------------
+---------------------------------
+Paragraph-level markup directives 
+---------------------------------
 .. warning::
    some warning
    Warning!
