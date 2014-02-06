@@ -99,6 +99,16 @@ Testing Code blocks
 """""""""""""""""""
 
 .. code-block:: python
+   :linenos:
+
+   >>> test(10)
+   <class 'type'> <class 'object'>
+   >>> type(10)
+   <class 'int'>
+   >>> 
+
+
+.. code-block:: python
    :emphasize-lines: 3,5
 
    def some_function():
