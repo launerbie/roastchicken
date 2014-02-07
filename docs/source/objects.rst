@@ -115,31 +115,27 @@ What else is there... let me try int: ::
 
 So int and type both inherit from object, it seems.
 
-code::
+.. note ::
 
-    >>> int.__class__
-    <class 'type'>
-    >>> type.__class__
-    <class 'type'>
-    >>> object.__class__
-    <class 'type'>
-    >>> ttype.__class__
-    <class 'type'>
+    ::
 
-    >>> type(ttype)
-    <class 'type'>
-    >>> type(type)
-    <class 'type'>
-    >>> type(int)
-    <class 'type'>
-    >>> type(object)
-    <class 'type'>
+        >>> for i in [ttype, type, int, object]:
+        ...     type(i), i
+        ... 
+        (<class 'type'>, <class '__main__.ttype'>)
+        (<class 'type'>, <class 'type'>)
+        (<class 'type'>, <class 'int'>)
+        (<class 'type'>, <class 'object'>)
 
-Explain this: ::
-    >>> type(object)
-    <class 'type'>
-    >>> type(object())
-    <class 'object'>
+
+    And ::
+    
+        >>> type(object)
+        <class 'type'>
+        >>> type(object())
+        <class 'object'>
+
+
 
 
 
