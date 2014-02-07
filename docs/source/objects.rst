@@ -25,16 +25,13 @@ code::
      |  type(name, bases, dict) -> a new type
      |  
      |  Methods defined here:
-    
+
     [...]
-    
-     |  ----------------------------------------------------------------------
+
      |  Data descriptors defined here:
-     |  
 
     [...]
 
-     |  
      |  ----------------------------------------------------------------------
      |  Data and other attributes defined here:
      |  
@@ -92,11 +89,9 @@ What else is there... let me try int: ::
      |  4
      |  
      |  Methods defined here:
-     |  
     
     [...]
     
-     |  ----------------------------------------------------------------------
      |  Data descriptors defined here:
      |  
      |  denominator
@@ -117,6 +112,37 @@ What else is there... let me try int: ::
      |  __new__ = <built-in method __new__ of type object>
      |      T.__new__(S, ...) -> a new object with type S, a subtype of T
     (END)
+
+So int and type both inherit from object, it seems.
+
+code::
+
+    >>> int.__class__
+    <class 'type'>
+    >>> type.__class__
+    <class 'type'>
+    >>> object.__class__
+    <class 'type'>
+    >>> ttype.__class__
+    <class 'type'>
+
+    >>> type(ttype)
+    <class 'type'>
+    >>> type(type)
+    <class 'type'>
+    >>> type(int)
+    <class 'type'>
+    >>> type(object)
+    <class 'type'>
+
+Explain this: ::
+    >>> type(object)
+    <class 'type'>
+    >>> type(object())
+    <class 'object'>
+
+
+
 
 
 
