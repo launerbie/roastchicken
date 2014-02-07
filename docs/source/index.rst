@@ -13,7 +13,8 @@ Contents:
 
    intro
    sphinx_examples
-   ingredients
+   objects
+
 
 
 
