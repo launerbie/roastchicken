@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from classes import Recipe
-from classes import Ingredient
+from .classes import Recipe
+from .classes import Ingredient
 
 def test_recipe_noname():
     recipe = Recipe()
