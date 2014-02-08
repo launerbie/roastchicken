@@ -12,4 +12,4 @@ before_script:
 
 # # command to run tests, e.g. python setup.py test
 script: 
-  - ./do_nothing.sh 
+  - nosetests -v
