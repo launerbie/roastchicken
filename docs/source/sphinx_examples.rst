@@ -95,6 +95,8 @@ Example math code-block using LaTeX grammar:
 
     \int_{0}^{2 \pi}\int_{0}^{\pi}\int_{0}^{R} r^{2} \sin{\left (\theta \right )}\, dr\, d\theta\, d\phi
 
+    \begin{cases} \frac{1}{- x + 1} & \text{for}\: \left\lvert{x}\right\rvert < 1 \\\sum_{k=0}^{\infty} x^{k} & \text{otherwise} \end{cases}
+
 
 ---------------------------------
 Paragraph-level markup directives 
