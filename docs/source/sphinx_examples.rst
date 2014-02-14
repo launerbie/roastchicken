@@ -95,6 +95,7 @@ Example math code-block using LaTeX grammar:
 
     \int_{0}^{2 \pi}\int_{0}^{\pi}\int_{0}^{R} r^{2} \sin{\left (\theta \right )}\, dr\, d\theta\, d\phi
 
+    \int_{0}^{\pi}\int_{0}^{\pi}\int_{0}^{R} r^{2} \sin{\left (\theta \right )}\, dr\, d\theta\, d\phi
 
 ---------------------------------
 Paragraph-level markup directives 
