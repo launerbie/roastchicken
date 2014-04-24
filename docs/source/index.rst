@@ -13,8 +13,7 @@ Contents:
 
    intro
    sphinx_examples
-   ingredients
-
+   twobody_variablemass
 
 
 
