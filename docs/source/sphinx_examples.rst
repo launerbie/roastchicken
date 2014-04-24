@@ -255,3 +255,8 @@ Comments
 Of course you can't see the commented stuff here, but look at the
 source to see how comment blocks are made.
 
+--------
+Images
+--------
+.. image:: http://home.strw.leidenuniv.nl/~lau/test.png
+
