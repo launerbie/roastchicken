@@ -6,7 +6,7 @@ Introduction/History
 --------------------
 Mention important/relevant works here:
 - Gylden, Mestschersky
-- Hadjidimetriou
+- Hadjidemetriou
 - Veras
 
 
@@ -54,10 +54,6 @@ following equations of motion:
 
 
 
-Mass-loss prescriptions
------------------------
-
-
 Definition of adiabaticity
 --------------------------
 
@@ -89,8 +85,8 @@ back in :eq:`sma_evolution` which then yields:
    \frac{dn}{dt} = \frac{n(2+e^2+3e\cos f)}{1-e^2} \frac{1}{\mu}\frac{d\mu}{dt}
 
 
-Then by taking the time derivative of :eq:`definition_mass_loss_index` and plugging in 
-equation :eq:`mean_motion_evolution` the equation that governs 
+Then by taking the time derivative of :eq:`definition_mass_loss_index` and substituting  
+equation :eq:`mean_motion_evolution` back in, the equation that governs 
 the evolution of :math:`\Psi` is obtained:
 
 .. math::
@@ -103,7 +99,50 @@ Solutions in the adiabatic regime
 ---------------------------------
 
 By imposing that the evolution of a two-body system is well in the adiabatic regime,
-certain solution can be found.
+certain approximate solutions of the evolution of the orbital elements can be found.
+
+The evolution of a variable mass binary system is considered adiabatic if the mass-loss
+time-scale is much greater than the planetary orbital time-scale. 
+
+Since the mass-loss time-scale is of the order :math:`\frac{\alpha}{\mu}` and the
+orbital time-scale is of the order :math:`P = \frac{2\pi}{n}`, the evolution
+is called adiabatic if:
+
+.. math::
+    \frac{\alpha}{\mu} >> P
+
+or equivalently, if :math:`\Psi << 1`.
+
+
+Adiabatic evolution of the semi-major-axis
+------------------------------------------
+Imposing that the evolution is adiabatic, does not make equation :eq:`sma_evolution` any
+easier to solve. If however, one assumes the eccentricity to be constant if the system evolves
+adiabatically, another equation of motion can be derived from 
+:eq:`conservation_angular_momentum` by taking its time-derivative.
+
+.. math::
+   \frac{dh^2}{dt} = 0 &= G (1-e^2) \frac{d(\mu a)}{dt} \\
+                       &= a \frac{d\mu}{dt} + \mu \frac{da}{dt}
+
+which yields the equation:
+
+.. math::
+   :label: sma_evolution_adiabatic
+
+   \frac{da}{dt} = -\frac{a}{\mu} \frac{d\mu}{dt}
+
+Solving equation :eq:`sma_evolution_adiabatic` then gives:
+
+.. math::
+   \int_0^t \frac{1}{a}\frac{da}{dt} &= -\int_0^t \frac{1}{\mu}\frac{d\mu}{dt} \\
+   \ln \left( \frac{a(t)}{a_0} \right) &= \ln \left( \left( \frac{\mu(t)}{\mu_0} \right)^{-1} \right) \\
+   a(t) &= a_0 \left( \frac{\mu(t)}{\mu_0} \right)^{-1}
+
+which gives the adiabatic evolution of the semi-major-axis as stated in Veras(2011):
+
+.. math::
+   a(t)_{\text{adiabatic}} = a_0 \left( \frac{\mu_0 - \alpha t}{\mu_0} \right)^{-1}
 
 
 
