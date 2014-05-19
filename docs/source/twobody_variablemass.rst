@@ -29,7 +29,7 @@ semi-major axis and :math:`e` the eccentricity.
    Todo, include derivation of :eq:`conservation_angular_momentum`? 
 
 Furthermore, he showed that for a variable mass two-body system, the 
-evolution of the orbital elements :math:`a e \mu f` is governed by the 
+evolution of the orbital elements :math:`a \, e \,\omega \,f` is governed by the 
 following equations of motion:
 
 .. math::
@@ -94,28 +94,29 @@ the evolution of :math:`\Psi` is obtained:
 
    \frac{d\Psi}{dt} = -3\Psi \frac{1+e\cos f}{1-e^2} \frac{1}{\mu}\frac{d\mu}{dt} 
 
+.. note::
+   
+   The adiabaticity increases monotonically for a monotonically decreasing mass.
 
-Solutions in the adiabatic regime
----------------------------------
 
+
+Adiabatic evolution of the semi-major-axis
+------------------------------------------
 By imposing that the evolution of a two-body system is well in the adiabatic regime,
-certain approximate solutions of the evolution of the orbital elements can be found.
+certain an approximate solution of the evolution of semi-major-axis can be found.
 
 The evolution of a variable mass binary system is considered adiabatic if the mass-loss
 time-scale is much greater than the planetary orbital time-scale. 
 
 Since the mass-loss time-scale is of the order :math:`\frac{\alpha}{\mu}` and the
 orbital time-scale is of the order :math:`P = \frac{2\pi}{n}`, the evolution
-is called adiabatic if:
+is considered adiabatic if:
 
 .. math::
     \frac{\alpha}{\mu} >> P
 
 or equivalently, if :math:`\Psi << 1`.
 
-
-Adiabatic evolution of the semi-major-axis
-------------------------------------------
 Imposing that the evolution is adiabatic, does not make equation :eq:`sma_evolution` any
 easier to solve. If however, one assumes the eccentricity to be constant if the system evolves
 adiabatically, another equation of motion can be derived from 
@@ -143,6 +144,60 @@ which gives the adiabatic evolution of the semi-major-axis as stated in Veras(20
 
 .. math::
    a(t)_{\text{adiabatic}} = a_0 \left( \frac{\mu_0 - \alpha t}{\mu_0} \right)^{-1}
+
+for a mass-loss presciption :math:`\frac{d\mu}{dt} = constant` .
+
+
+
+Numerical Integrations
+----------------------
+This section presents the results of numerical integrations with AMUSE.
+
+Goal:
+- Investigate large mass update intervals
+
+Show behaviour at different starting mass-loss-indices
+
+Motivation for numerical integration:
+
+eccentricity cannot be solved exactly.
+
+
+
+Mass update intervals
+----------------------
+Large mass update --> large error in eccentricity ?
+How do large mass updates influence the change in eccentricity?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
