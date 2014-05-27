@@ -14,6 +14,7 @@ Contents:
    intro
    sphinx_examples
    twobody_variablemass
+   simulations
 
 
 

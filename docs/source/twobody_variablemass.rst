@@ -9,12 +9,27 @@ Mention important/relevant works here:
 - Hadjidemetriou
 - Veras
 
+Terminology
+-----------
+
+N-Body problem
+2-Body Problem
+Kepler Problem (2-Body problem with M >> m)
+
+Variable Mass 2-Body Problem
+Variable Mass 2-Body Problem (with M >> m)
+
+Variable-mass correction to Newton's 2nd Law of Motion
+------------------------------------------------------
+
+Derivation of variable-mass equation of motion.
+
 
 Equations of motion
 -------------------
 
 Hadjidemetriou (1963) showed that in the case of isotropic mass-loss, 
-the angular momentum h is conserved and equal to:
+the angular momentum h of the orbiting body is conserved and equal to:
 
 .. math::
    :label: conservation_angular_momentum
@@ -22,7 +37,7 @@ the angular momentum h is conserved and equal to:
    h = \sqrt{ G\mu a (1-e^2) } = \text{constant}
 
 where :math:`\mu` is the total mass of the system, :math:`a` the 
-semi-major axis and :math:`e` the eccentricity.
+semi-major axis and :math:`e` the eccentricity. 
 
 .. note::
 
@@ -102,8 +117,9 @@ the evolution of :math:`\Psi` is obtained:
 
 Adiabatic evolution of the semi-major-axis
 ------------------------------------------
-By imposing that the evolution of a two-body system is well in the adiabatic regime,
-certain an approximate solution of the evolution of semi-major-axis can be found.
+By imposing that the evolution of a two-body system is well in the adiabatic regime 
+and that the mass-loss rate :math:`-\frac{d\mu}{dt} = \alpha` is constant, 
+an approximate solution of the evolution of semi-major-axis can be found.
 
 The evolution of a variable mass binary system is considered adiabatic if the mass-loss
 time-scale is much greater than the planetary orbital time-scale. 
@@ -140,34 +156,15 @@ Solving equation :eq:`sma_evolution_adiabatic` then gives:
    \ln \left( \frac{a(t)}{a_0} \right) &= \ln \left( \left( \frac{\mu(t)}{\mu_0} \right)^{-1} \right) \\
    a(t) &= a_0 \left( \frac{\mu(t)}{\mu_0} \right)^{-1}
 
-which gives the adiabatic evolution of the semi-major-axis as stated in Veras(2011):
+which gives the adiabatic evolution of the semi-major-axis as stated in Veras(2011) 
+for a constant mass-loss prescription:
 
 .. math::
    a(t)_{\text{adiabatic}} = a_0 \left( \frac{\mu_0 - \alpha t}{\mu_0} \right)^{-1}
 
-for a mass-loss presciption :math:`\frac{d\mu}{dt} = constant` .
 
 
 
-Numerical Integrations
-----------------------
-This section presents the results of numerical integrations with AMUSE.
-
-Goal:
-- Investigate large mass update intervals
-
-Show behaviour at different starting mass-loss-indices
-
-Motivation for numerical integration:
-
-eccentricity cannot be solved exactly.
-
-
-
-Mass update intervals
-----------------------
-Large mass update --> large error in eccentricity ?
-How do large mass updates influence the change in eccentricity?
 
 
 
