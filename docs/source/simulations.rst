@@ -23,7 +23,7 @@ this by adapting its timesteps accordingly.
 
 Fixed mass update timestep
 --------------------------
-One straightforward way to evolve a two-body system with variable mass, 
+The most straightforward way to evolve a two-body system with variable mass, 
 is to choose a fixed timestep :math:`\Delta t` and update the masses at
 times :math:`t_i`:
 
@@ -33,7 +33,17 @@ times :math:`t_i`:
 with masses :math:`m_i`:
 
 .. math::
-   m_{i+1} = m_i + \frac{dm}{dt} \Delta t 
+   m_{i+1} &= m_i + \Delta m \\
+           &= m_i + \frac{dm}{dt} \Delta t 
+
+The changes in mass which are applied at times :math:`t_i`,   
+
+
+- Osculating orbits (due to change in mass)
+
+- Large mass update --> large error in eccentricity ?
+
+- How do large mass updates influence the change in eccentricity?
 
 
 .. image:: http://home.strw.leidenuniv.nl/~lau/positions_e0.png
@@ -56,38 +66,15 @@ with masses :math:`m_i`:
    h = \sqrt{ G\mu a (1-e^2) } = \text{constant}
 
 
-- Variable mass update intervals
-- Accuracy and conservation of energy/angular momentum
-
-Large mass update --> large error in eccentricity ?
-How do large mass updates influence the change in eccentricity?
-
-
 Goal:
 - Investigate large mass update intervals
 
-Show behaviour at different starting mass-loss-indices
+- Variable mass update intervals
+- Accuracy and conservation of energy/angular momentum
 
 Motivation for numerical integration:
-
 eccentricity cannot be solved exactly.
 
-
-One planet system
------------------
-
-Simulate a one-planet system and plot the evolution of:
-
-a vs t
-e vs t
-w vs t
-f vs t
-P vs t
-phi vs t
-
-
-Two planet system
------------------
 
 
 
