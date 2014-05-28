@@ -23,10 +23,37 @@ this by adapting its timesteps accordingly.
 
 Fixed mass update timestep
 --------------------------
-One straightforward way to evolve a two-body system with variable mass, is to simply
+One straightforward way to evolve a two-body system with variable mass, 
+is to choose a fixed timestep :math:`\Delta t` and update the masses at
+times :math:`t_i`:
+
+.. math::
+   t_{i+1} = t_i + \Delta t
+
+with masses :math:`m_i`:
+
+.. math::
+   m_{i+1} = m_i + \frac{dm}{dt} \Delta t 
 
 
+.. image:: http://home.strw.leidenuniv.nl/~lau/positions_e0.png
+   :width: 1016 px
+   :height: 841 px
+   :scale: 50 %
+   :align: center
+   :alt: alternate text
 
+.. image:: http://home.strw.leidenuniv.nl/~lau/positions_e05.png
+   :width: 1003 px
+   :height: 807 px
+   :scale: 50 %
+   :align: center
+   :alt: alternate text
+
+.. math::
+   :label: conservation_angular_momentum
+
+   h = \sqrt{ G\mu a (1-e^2) } = \text{constant}
 
 
 - Variable mass update intervals
